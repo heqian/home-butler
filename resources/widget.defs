@@ -1,0 +1,49 @@
+<svg>
+  <defs>
+    <!-- System Imports -->
+    <link rel="import" href="/mnt/sysassets/system_widget.defs" />
+    <link rel='import' href='/mnt/sysassets/widgets/baseview_widget.defs' />
+    <link rel="import" href="/mnt/sysassets/widgets/tile_list_widget.defs" />
+
+    <!-- My Customization -->
+    <link rel='stylesheet' href='styles.css' />
+
+    <symbol id='domain-card' href='#tile-list-item' pointer-events="visible">
+      <rect id='background' />
+      <text id='name' />
+      <image id='icon' />
+    </symbol>
+
+    <symbol id='device-card' href='#tile-list-item' pointer-events="visible">
+      <rect id='background' />
+      <rect id='state'>
+        <animate attributeName='opacity' begin='enable' from='1' to='0' dur='0.2' />
+        <animate attributeName='opacity' begin='disable' from='0' to='1' dur='0.2' />
+      </rect>
+      <text id='name' />
+      <image id='icon' />
+    </symbol>
+
+    <symbol id='climate-card' class='climate' href='#device-card'>
+      <set href='#background' attributeName='fill' to='#61C2F2' />
+      <text id='temperature' />
+      <text id='humidity' />
+      <image id='frame' href='climate.png' />
+    </symbol>
+
+    <symbol id='light-card' class='light' href='#device-card'>
+      <set href='#background' attributeName='fill' to='#FFD733' />
+      <set href='#icon' attributeName='href' to='light.png' />
+    </symbol>
+
+    <symbol id='switch-card' class='switch' href='#device-card'>
+      <set href='#background' attributeName='fill' to='#6CD99A' />
+      <set href='#icon' attributeName='href' to='switch.png' />
+      <g id='toggle'>
+        <circle id='handle' />
+        <animateTransform attributeType='translate' from='0, 0' to='0, -48' begin='enable' dur='0.2' />
+        <animateTransform attributeType='translate' from='0, -48' to='0, 0' begin='disable' dur='0.2' />
+      </g>
+    </symbol>
+  </defs>
+</svg>

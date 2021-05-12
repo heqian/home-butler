@@ -1,0 +1,29 @@
+<svg>
+  <use id='domain-list' href='#tile-list'>
+    <!-- Climate -->
+    <use id='climate-domain' href='#domain-card' display='none'>
+      <set href='#background' attributeName='fill' to='#61C2F2' />
+      <set href='#icon' attributeName='href' to='climate.png' />
+      <set href='#name' attributeName='text-buffer' to='Climate' />
+      <circle id='handle' />
+    </use>
+
+    <!-- Light -->
+    <use id='light-domain' href='#domain-card' display='none'>
+      <set href='#background' attributeName='fill' to='#FFD733' />
+      <set href='#icon' attributeName='href' to='light.png' />
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+
+    <!-- Switch -->
+    <use id='switch-domain' href='#domain-card' display='none'>
+      <set href='#background' attributeName='fill' to='#6CD99A' />
+      <set href='#icon' attributeName='href' to='switch.png' />
+      <set href='#name' attributeName='text-buffer' to='Switch' />
+      <circle id='handle' />
+    </use>
+  </use>
+
+  <text id='warning-title'>Butler</text>
+  <textarea id='warning-content'>Calling your Home Assistant. Please wait...</textarea>
+</svg>

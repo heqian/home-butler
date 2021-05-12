@@ -1,0 +1,54 @@
+<svg>
+  <animate attributeName='x' from='100%' to='0' begin='load' dur='0.25' easing='ease-in-out' />
+
+  <use id='light-list' href='#tile-list'>
+    <use id='light-0' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-1' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-2' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-3' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-4' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-5' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-6' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-7' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-8' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-9' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-10' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-11' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-12' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-13' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-14' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+    <use id='light-15' href='#light-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Light' />
+    </use>
+  </use>
+</svg>

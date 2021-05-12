@@ -1,0 +1,26 @@
+<svg>
+  <animate attributeName='x' from='100%' to='0' begin='load' dur='0.25' easing='ease-in-out' />
+
+  <use id='climate-list' href='#tile-list'>
+    <use id='climate-0' href='#climate-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Climate' />
+      <set href='#humidity' attributeName='text-buffer' to='50%' />
+      <set href='#temperature' attributeName='text-buffer' to='24°' />
+    </use>
+    <use id='climate-1' href='#climate-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Climate' />
+      <set href='#humidity' attributeName='text-buffer' to='50%' />
+      <set href='#temperature' attributeName='text-buffer' to='24°' />
+    </use>
+    <use id='climate-2' href='#climate-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Climate' />
+      <set href='#humidity' attributeName='text-buffer' to='50%' />
+      <set href='#temperature' attributeName='text-buffer' to='24°' />
+    </use>
+    <use id='climate-3' href='#climate-card' display='none'>
+      <set href='#name' attributeName='text-buffer' to='Climate' />
+      <set href='#humidity' attributeName='text-buffer' to='50%' />
+      <set href='#temperature' attributeName='text-buffer' to='24°' />
+    </use>
+  </use>
+</svg>

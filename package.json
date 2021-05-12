@@ -1,0 +1,41 @@
+{
+  "name": "home-butler",
+  "version": "2.0.1",
+  "description": "a Home Assistant controller app for Fitbit smartwatches",
+  "private": true,
+  "scripts": {
+    "format": "standard --fix",
+    "build": "fitbit-build",
+    "debug": "fitbit"
+  },
+  "keywords": [
+    "Fitbit",
+    "Sense",
+    "Versa 3",
+    "Home Assistant",
+    "Smart Home",
+    "Smartwatch"
+  ],
+  "author": "Qian He",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@fitbit/sdk": "5.0.1",
+    "@fitbit/sdk-cli": "*",
+    "standard": "*"
+  },
+  "fitbit": {
+    "appUUID": "",
+    "appType": "app",
+    "appDisplayName": "Home Butler",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#41D9CC",
+    "requestedPermissions": [
+      "access_internet"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {}
+  }
+}

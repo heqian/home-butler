@@ -1,0 +1,129 @@
+#domain-card {
+  height: 50%;
+}
+
+#domain-card #background {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+#domain-card #icon {
+  x: 32;
+  y: 50%-40;
+  width: 80;
+  height: 80;
+}
+
+#domain-card #name {
+  x: 144;
+  y: 50%+16;
+  font-size: 48;
+  font-weight: bold;
+  text-length: 64;
+  fill: white;
+  text-anchor: start;
+}
+
+#climate-domain #handle {
+  cx: 72;
+  cy: 50%;
+  r: 16;
+  fill: white;
+}
+
+#switch-domain #handle {
+  cx: 72;
+  cy: 50%;
+  r: 8;
+  fill: white;
+}
+
+#device-card #background {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+#device-card #state {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+  fill: black;
+  opacity: 1;
+}
+
+#device-card #name {
+  font-size: 32;
+  font-weight: bold;
+  text-length: 64;
+  fill: white;
+  text-anchor: middle;
+  x: 50%;
+  y: 100%-48;
+}
+
+#device-card #icon {
+  x: 50%-64;
+  y: 50%-72;
+  width: 128;
+  height: 128;
+}
+
+.switch #handle {
+  cx: 50%;
+  cy: 50%+16;
+  r: 13;
+  fill: white;
+}
+
+.climate #frame {
+  x: 50%-96;
+  y: 50%-96;
+  width: 192;
+  height: 192;
+}
+
+.climate #temperature {
+  font-size: 32;
+  font-weight: bold;
+  text-length: 8;
+  fill: white;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%-16;
+}
+
+.climate #humidity {
+  font-size: 32;
+  font-weight: bold;
+  text-length: 8;
+  fill: white;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+32;
+}
+
+#warning-title {
+  x: 50%;
+  y: 50%-32;
+  font-size: 32;
+  font-weight: bold;
+  text-length: 16;
+  fill: #41D9CC;
+  text-anchor: middle;
+}
+
+#warning-content {
+  x: 48;
+  y: 50%-16;
+  width: 100%-96;
+  font-size: 18;
+  text-length: 256;
+  fill: white;
+}
