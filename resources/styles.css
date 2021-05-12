@@ -1,0 +1,75 @@
+textarea {
+  text-length: 256;
+}
+
+#pagination-dots {
+  y: 8;
+}
+
+#card #background {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+#card #state {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+  fill: black;
+  opacity: 1;
+}
+
+#card #name {
+  font-size: 32;
+  font-weight: bold;
+  text-length: 64;
+  fill: white;
+  text-anchor: middle;
+  x: 50%;
+  y: 100%-16;
+}
+
+#card #icon {
+  x: 50%-64;
+  y: 50%-72;
+  width: 128;
+  height: 128;
+}
+
+.switch #handle {
+  cx: '50%';
+  cy: '50%+16';
+  r: 13;
+  fill: white;
+}
+
+.climate #frame {
+  x: 50%-96;
+  y: 50%-96;
+  width: 192;
+  height: 192;
+}
+
+.climate #temperature {
+  font-size: 32;
+  font-weight: bold;
+  text-length: 8;
+  fill: white;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%-16;
+}
+
+.climate #humidity {
+  font-size: 32;
+  font-weight: bold;
+  text-length: 8;
+  fill: white;
+  text-anchor: middle;
+  x: 50%;
+  y: 50%+32;
+}

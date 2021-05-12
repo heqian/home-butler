@@ -1,0 +1,229 @@
+<svg>
+  <defs>
+    <symbol id='card' href='#panoramaview-item' pointer-events='visible'>
+      <rect id='background' />
+      <rect id='state'>
+        <animate attributeName='opacity' begin='enable' from='1' to='0' dur='0.2' />
+        <animate attributeName='opacity' begin='disable' from='0' to='1' dur='0.2' />
+      </rect>
+      <text id='name' />
+      <image id='icon' />
+    </symbol>
+    <symbol id='light-card' class='light' href='#card'>
+      <set href='#background' attributeName='fill' to='#FFD733' />
+      <set href='#icon' attributeName='href' to='light.png' />
+    </symbol>
+    <symbol id='switch-card' class='switch' href='#card'>
+      <set href='#background' attributeName='fill' to='#6CD99A' />
+      <set href='#icon' attributeName='href' to='switch.png' />
+      <g id='toggle'>
+        <circle id='handle' />
+        <animateTransform attributeType='translate' from='0, 0' to='0, -48' begin='enable' dur='0.2' />
+        <animateTransform attributeType='translate' from='0, -48' to='0, 0' begin='disable' dur='0.2' />
+      </g>
+    </symbol>
+    <symbol id='climate-card' class='climate' href='#card'>
+      <set href='#background' attributeName='fill' to='#61C2F2' />
+      <text id='temperature' />
+      <text id='humidity' />
+      <image id='frame' href='climate.png' />
+    </symbol>
+  </defs>
+
+  <use href='#tumblerview'>
+    <use id='bug' href='#tumblerview-item'></use>
+
+    <!-- Climate -->
+    <use id='climate-domain' href='#tumblerview-item' display='none'>
+      <use href='#panoramaview'>
+        <use id='climate-0' href='#climate-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Climate' />
+          <set href='#humidity' attributeName='text-buffer' to='50%' />
+          <set href='#temperature' attributeName='text-buffer' to='24°' />
+        </use>
+        <use id='climate-1' href='#climate-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Climate' />
+          <set href='#humidity' attributeName='text-buffer' to='50%' />
+          <set href='#temperature' attributeName='text-buffer' to='24°' />
+        </use>
+        <use id='climate-2' href='#climate-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Climate' />
+          <set href='#humidity' attributeName='text-buffer' to='50%' />
+          <set href='#temperature' attributeName='text-buffer' to='24°' />
+        </use>
+        <use id='climate-3' href='#climate-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Climate' />
+          <set href='#humidity' attributeName='text-buffer' to='50%' />
+          <set href='#temperature' attributeName='text-buffer' to='24°' />
+        </use>
+
+        <!-- Have enough pagination dots for your slides (extras are hidden) -->
+        <use id='pagination-dots' href='#pagination-widget'>
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-highlight-dot' />
+        </use>
+      </use>
+    </use>
+
+
+    <!-- Light -->
+    <use id='light-domain' href='#tumblerview-item' display='none'>
+      <use href='#panoramaview'>
+        <use id='light-0' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-1' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-2' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-3' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-4' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-5' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-6' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-7' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-8' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-9' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-10' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-11' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-12' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-13' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-14' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+        <use id='light-15' href='#light-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Light' />
+        </use>
+
+        <!-- Have enough pagination dots for your slides (extras are hidden) -->
+        <use id='pagination-dots' href='#pagination-widget'>
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-highlight-dot' />
+        </use>
+      </use>
+    </use>
+
+
+    <!-- Switch -->
+    <use id='switch-domain' href='#tumblerview-item' display='none'>
+      <use href='#panoramaview'>
+        <use id='switch-0' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-1' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-2' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-3' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-4' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-5' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-6' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-7' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-8' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-9' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-10' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-11' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-12' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-13' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-14' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+        <use id='switch-15' href='#switch-card' display='none'>
+          <set href='#name' attributeName='text-buffer' to='Switch' />
+        </use>
+
+        <!-- Have enough pagination dots for your slides (extras are hidden) -->
+        <use id='pagination-dots' href='#pagination-widget'>
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-dot' />
+          <use href='#pagination-highlight-dot' />
+        </use>
+      </use>
+    </use>
+  </use>
+
+  <use id='message' href='#mixed-text-center-mid'>
+    <set href='#header/text' attributeName='text-buffer' to='Butler' />
+    <set href='#header/text' attributeName='fill' to='#41D9CC' />
+    <set href='#copy/text' attributeName='text-buffer' to='Calling your Home Assistant. Please wait...' />
+  </use>
+</svg>
