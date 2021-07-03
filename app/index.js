@@ -19,9 +19,13 @@ class HomeButler {
 
   init () {
     // Wakeup the companion app
-    peerSocket.send({
-      command: 'wakeup'
-    })
+    try {
+      peerSocket.send({
+        command: 'wakeup'
+      })
+    } catch {
+      // fail silently if peerSocket is not OPEN
+    }
   }
 
   render (devices) {
