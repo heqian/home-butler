@@ -19,9 +19,13 @@ class HomeButler {
 
   init () {
     // Wakeup the companion app
-    peerSocket.send({
-      command: 'wakeup'
-    })
+    try {
+      peerSocket.send({
+        command: 'wakeup'
+      })
+    } catch {
+      // fail silently if peerSocket is not OPEN
+    }
   }
 
   render (devices) {
@@ -92,8 +96,17 @@ class HomeButler {
         const temperature = cardDOM.getElementById('temperature')
         const humidity = cardDOM.getElementById('humidity')
 
-        temperature.text = device.attributes.current_temperature + '°'
-        humidity.text = device.attributes.current_humidity + '%'
+        temperature.text =
+          device.attributes.current_temperature !== undefined &&
+          device.attributes.current_temperature !== null
+            ? device.attributes.current_temperature + "°"
+            : "";
+
+        humidity.text =
+          device.attributes.current_humidity !== undefined &&
+          device.attributes.current_humidity !== undefined
+            ? device.attributes.current_humidity + "%"
+            : "";
 
         switch (device.state) {
           case 'heat_cool': {
