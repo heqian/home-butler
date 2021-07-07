@@ -23,8 +23,8 @@ class HomeButler {
       peerSocket.send({
         command: 'wakeup'
       })
-    } catch {
-      // fail silently if peerSocket is not OPEN
+    } catch (error) {
+      console.error(error)
     }
   }
 
@@ -96,17 +96,13 @@ class HomeButler {
         const temperature = cardDOM.getElementById('temperature')
         const humidity = cardDOM.getElementById('humidity')
 
-        temperature.text =
-          device.attributes.current_temperature !== undefined &&
-          device.attributes.current_temperature !== null
-            ? device.attributes.current_temperature + "°"
-            : "";
+        temperature.text = isNaN(device.attributes.current_temperature)
+          ? '--°'
+          : device.attributes.current_temperature + '°'
 
-        humidity.text =
-          device.attributes.current_humidity !== undefined &&
-          device.attributes.current_humidity !== undefined
-            ? device.attributes.current_humidity + "%"
-            : "";
+        humidity.text = isNaN(device.attributes.current_humidity)
+          ? '--%'
+          : device.attributes.current_humidity + '%'
 
         switch (device.state) {
           case 'heat_cool': {
